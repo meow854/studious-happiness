@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>
+                Hand Gestures
+                <br>
+                <span>&#9994;</span>
+                <span>&#9995;</span>
+                <span>&#9996;</span>
+                <span>&#9997;</span>
+                <span>&#129309;</span>
+                <span>&#129310;</span>
+            </h1>
+            <h3>Take a Picture of a Hand Gesture to Know its Meaning</h3>
+            <h3>Make Any of These Gestures ~ 
+                <span>&#128077;</span>
+                <span>&#128078;</span>
+                <span>&#9995;</span>
+                <span>&#9996;</span>
+                <span>&#128076;</span>
+            </h3>
+
+            <br>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+            <h4>Camera View</h4>
+            <div id="camera"></div>
+            <br>
+            <button  id= "hi" onclick="takepic()">Take Picture</button>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h4>Meaning</h4>
+                <label id="meaning"><span id="meaningemoji"></span></label>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h4>Picture Taken</h4>
+                <div id="wer"></div>
+                <br>
+                <button onclick="findmeaning()">Find Meaning</button>
+            </div>
+        </center>
+    </body>
+</html>
